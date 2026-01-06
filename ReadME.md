@@ -64,24 +64,26 @@ Chosen for capturing non-linear patterns and achieving lower error.
 
 ---
 
-## Steps to Run the Project Locally
-- Clone the project repository from GitHub to the local system.
-- Navigate to the project directory created after cloning.
-- Install all required Python dependencies specified in the requirements.txt file.
-- Launch the Streamlit-based web application.
-- Access the application through the local URL displayed in the terminal and use the interface to generate predictions.
-
-git clone https://github.com/Chikorita03/Autojudge.git
-cd autojudge
-pip install -r requirements.txt
-streamlit run app.py
-
-Once the application starts, it will be accessible in a web browser at http://localhost:8501. Users can then enter a programming problem’s title, description, input format, and output format to obtain the predicted difficulty class and numerical difficulty score.
----
-
 ## Evaluation Metrics
 - Classification: Accuracy, Confusion Matrix
 - Regression: MAE, RMSE
+
+---
+
+## Steps to Run the Project Locally
+
+- Clone the project repository from GitHub to the local system.
+- Navigate to the project directory created after cloning.
+- Install all required Python dependencies specified in the `requirements.txt` file.
+- Launch the Streamlit-based web application.
+- Access the application through the local URL displayed in the terminal and use the interface to generate predictions.
+
+```bash
+git clone https://github.com/Chikorita03/autojudge.git
+cd autojudge
+pip install -r requirements.txt
+streamlit run app.py 
+```
 
 ---
 
