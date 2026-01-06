@@ -70,6 +70,23 @@ Chosen for capturing non-linear patterns and achieving lower error.
 
 ---
 
+## Steps to Run the Project Locally
+
+- Clone the project repository from GitHub to the local system.
+- Navigate to the project directory created after cloning.
+- Install all required Python dependencies specified in the `requirements.txt` file.
+- Launch the Streamlit-based web application.
+- Access the application through the local URL displayed in the terminal and use the interface to generate predictions.
+
+```bash
+git clone https://github.com/Chikorita03/autojudge.git
+cd autojudge
+pip install -r requirements.txt
+streamlit run app.py 
+```
+
+---
+
 ## Web Interface
 
 The project includes a Streamlit-based web application that allows users to:
