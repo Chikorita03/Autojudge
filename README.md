@@ -79,8 +79,8 @@ Chosen for capturing non-linear patterns and achieving lower error.
 - Access the application through the local URL displayed in the terminal and use the interface to generate predictions.
 
 ```bash
-git clone https://github.com/Chikorita03/autojudge.git
-cd autojudge
+git clone https://github.com/Chikorita03/Autojudge.git
+cd Autojudge
 pip install -r requirements.txt
 streamlit run app.py 
 ```
