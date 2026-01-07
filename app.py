@@ -33,7 +33,21 @@ if st.button("Predict"):
             "output_description": output_desc
         }])
 
-        df = preprocess_data(df)
+        # df = preprocess_data(df)
+        df["combined_text"] = (
+            df["title"] + " " +
+            df["description"] + " " +
+            df["input_description"] + " " +
+            df["output_description"]
+        )
+
+        df["combined_text"] = (
+            df["combined_text"]
+            .str.lower()
+            .str.replace("\n", " ", regex=False)
+            .str.replace("\t", " ", regex=False)
+            .str.replace(r"\s+", " ", regex=True)
+        )
 
         X_text, X_num = build_features_for_inference(df, tfidf, scaler)
         X = hstack([X_text, X_num])
