@@ -22,7 +22,7 @@ results = evaluate_logistic_classifier(classifier, X_test, y_test)
 
 print("Accuracy:", results["accuracy"])
 print("Confusion Matrix:\n", results["confusion_matrix"])
-print("Classification Report:\n", results["classification_report"])
+# print("Classification Report:\n", results["classification_report"])
 
 y_train_score = df.loc[idx_train, "problem_score"]
 y_test_score = df.loc[idx_test, "problem_score"]

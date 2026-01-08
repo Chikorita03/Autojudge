@@ -1,3 +1,7 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from data_preprocessing import preprocess_data
 from feature_engineering import build_features
 from models.regression.gradient_boosting import (
