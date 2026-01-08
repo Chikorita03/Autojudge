@@ -3,7 +3,6 @@ import pandas as pd
 import joblib
 from scipy.sparse import hstack
 
-from data_preprocessing import preprocess_data
 from feature_engineering import build_features_for_inference
 
 # Load models
@@ -33,7 +32,6 @@ if st.button("Predict"):
             "output_description": output_desc
         }])
 
-        # df = preprocess_data(df)
         df["combined_text"] = (
             df["title"] + " " +
             df["description"] + " " +
